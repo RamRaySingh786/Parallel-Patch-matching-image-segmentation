@@ -73,7 +73,7 @@ def draw_bounding_boxes(segmented_image, min_contour_area=500):
     return output_image
 
 if __name__ == "__main__":
-    image = cv2.imread('dogs.jpg')
+    image = cv2.imread(r'C:\New folder\dogs.jpg')
     patch_size = 70
     patches = split_image_into_patches(image, patch_size)
     matched_patches = parallel_patch_matching(patches, num_workers=4)
